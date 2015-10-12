@@ -1,0 +1,6 @@
+¿Qué es __main__ y cómo funciona?
+main es imprescindible en cualquier programa C/C++ representa el punto de inicio de su ejecución.
+Que es realmente el punto de entrada a la ejecución del programa.
+Este módulo realiza diversas tareas preparatorias a la ejecución propiamente dicha. Por ejemplo, iniciar todas las variables estáticas o globales y realizar determinadas verificaciones del hardware. Finalmente 
+ pasa el control a una función que debe responder al nombre de main y le pasa algunos
+argumentos en base a datos que ha recibido a su vez del Sistema Operativo
