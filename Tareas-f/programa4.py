@@ -15,7 +15,7 @@ while chance < 10:
 
         dias = 24 - tiempo % 24
 		
-	 horas = 8 - tiempo % 8
+	horas = 8 - tiempo % 8
 		
 	minutos = 60 - tiempo % 60
 
