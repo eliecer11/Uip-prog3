@@ -1,0 +1,97 @@
+<Principal>:
+	#Declaracionde Variables para usar en .py
+	nombre: nom
+	cedula: ced 
+	correo: email
+	modelo: mod
+	serie: serie
+	otros: otros
+	Screen:	
+		Button:
+			text: ' Bienvenido al Sistema de Soporte Tecnico TECHSUPPORT\n\n Presentado Por: \n Eliecer samaniego 8-894-1541\n\n **NOTA: EL SISTEMA NO GUARDARA LOS DATOS\n    HASTA QUE TODOS LOS CAMPOS ESTEN COMPLETOS'
+			font_size: 20
+			on_press:
+				root.current= ('Inicio')
+	Screen:		
+		name: 'Inicio'	
+		BoxLayout:
+			orientation: 'vertical'
+			spacing: 20		
+			Label:
+				text: '-Datos Del Cliente'
+				font_size: 50
+			GridLayout:
+				cols: 2	
+				spacing: 10	
+				Label:
+					text: 'Nombre:'
+					font_size: 35
+				TextInput:
+					id: nom
+					font_size: 35
+				Label:
+					text: 'Cedula:'
+					font_size: 35
+				TextInput:
+					id: ced
+					font_size: 35
+				Label:
+					text: 'Correo:'
+					font_size: 35
+				TextInput:	
+					id: email	
+					font_size: 35	
+			Button:
+				text: 'Siguiente'	
+				font_size: 40				
+				background_color: (0,2,100,150)
+				on_press:
+					root.current= ('computadora')
+					root.cliente()
+	Screen:
+		name: 'computadora'
+		BoxLayout:
+			orientation: 'vertical'
+			spacing: 20				
+			Label:
+				text: '-Datos De La Computadora'
+				font_size: 50
+			GridLayout:
+				cols: 2	
+				spacing: 10	
+				Label:
+					text: 'Modelo:'
+					font_size: 35
+				TextInput:
+					id: mod
+					font_size: 35
+				Label:
+					text: 'Serie:'
+					font_size: 35
+				TextInput:
+					id: serie
+					font_size: 35
+				Label:
+					text: 'Otros Accesorios:'
+					font_size: 35
+				TextInput:	
+					id: otros	
+					font_size: 35		
+			GridLayout:
+				cols: 2
+				spacing: "50dp"
+				Button:
+					text: 'Eliminar'	
+					font_size: 40			
+					background_color: (50,0,0,150)
+					on_press:
+						root.eliminar()
+						root.current= ('Inicio')
+				Button:
+					text: 'Guardar'
+					font_size: 40	
+					background_color: (0,50,0,150)
+					on_press:
+						root.computadora()
+						root.guardar()
+						root.current= ('Inicio')
