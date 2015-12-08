@@ -1,4 +1,7 @@
- 
+#calcular el area y perimetro de un rectangulo 
+#base=5 
+#altura=7 convertir area y perimetro en metros y pulgadas
+
 base=5
 altura=7
 
