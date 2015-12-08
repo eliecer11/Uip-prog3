@@ -1,4 +1,10 @@
-# laboratorio clase 4
+# 5.	El Emperador esta celebrando aniversario y ofrecera a sus clientes una serie 
+#de ofertas que se traduciran en un incremento de sus ventas Las reglas de las ofertas
+#se basan en un porcentaje de descuento sobre el total de compra,  que estarian variando 
+#dependiendo del monto adquirido: Por un ponton mayor o igual a $500 descuento del 30 Por
+#un monto menor de $500 pero mayor o igual a $200 despuento del 20% Por un monto menor de
+#$200 pero mayor o igual a $100 descuento del 10% Elabore este programa considerando 5 
+#susuarios por ejecución
 
 descuento1= 0.30
 descuento2= 0.20
