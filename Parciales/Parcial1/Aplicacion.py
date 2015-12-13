@@ -1,6 +1,6 @@
 from kivy.app import App
-from kivy.uix.screenmanager import ScreenManager
 from kivy.properties import ObjectProperty
+from kivy.uix.screenmanager import ScreenManager,Screen, FadeTransition
 
 # IMPORTANDO MODULOS 
 from configurador import Guardar_datos

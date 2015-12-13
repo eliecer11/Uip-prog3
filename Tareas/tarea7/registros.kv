@@ -1,0 +1,21 @@
+<Asistencias>:	
+	nombre: nombre
+	BoxLayout:
+		orientation: 'vertical'
+		spacing: 10		
+		Label:
+			text: "ASISTENCIA"	
+			font_size: 60
+		BoxLayout:	
+			Label:
+				text: "Nombre"
+			TextInput:
+				id: nombre
+		Button:
+			text: 'Guardar'
+			on_press: 
+				root.guardar(nombre.text)
+				nombre.text =""
+		Button:
+			text: "Exportar"
+			on_press: root.exportar()
