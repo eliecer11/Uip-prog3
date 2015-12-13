@@ -1,7 +1,7 @@
 # Uip-prog3
 Programación de Computadoras III - UIP
 
-:Autor: <nombre>
+:Autor: <ELIECER SAMANIEGO>
 
 :Fecha: <fecha>
 
